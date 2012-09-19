@@ -1,51 +1,49 @@
 
 
-	Z������(Z Sudo.) ��Ʒ
+	Z工作室(Z Sudo.) 作品
 
 	http://www.z-robot.com
 
 	http://api.dingxiaoyu.com
 
-	API�ӿ� 1.0 �棨 php+mysql �棩
+	API接口 1.0 版（ php+mysql 版）
 
 
-    ʹ��Э��
+    使用协议
 
-	�˰汾��Դ��������Ը�����޸ĺ�İ汾���͵��ҵ�����һ�ݣ��Թ�ѧϰ������
+	此版本开源，但请自愿将您修改后的版本发送到我的邮箱一份，以供学习交流！
 
-	���䣺614422099@qq.com
-
-
+	邮箱：614422099@qq.com
 
 
-    ��װʹ��
+    安装使用
 	
-	���� php+mysql ���л���(���˽���鵽��̳�鿴�������)
+	搭配 php+mysql 运行环境(不了解的情到论坛查看相关贴子)
 
-	�� config.php ��д���������Ϣ
+	在 config.php 填写你的配置信息
 
-	���幦�ܣ������ע��
+	具体功能，请参照注释
 
-	�뽫 Robot.php �ĵ�ַ������Ļ����˵Ľӿڵ�ַ
-
-	
-    �ļ�˵��
-
-	Robot.php  		�ӿڷ��ʵ��ļ�
-	config.php 		�����ļ�
-	Huifu.php		���ٻظ��ĵ�
-	Post.php		���ܻ�����post����ֵ�������򵥴���
-	Even.php		����event�¼�
-	Api.php			����ʵ���ĵ�
-	Function.php		�����ĵ���������һЩȫ�ֺ���
-	QQRobotApi.php		�Ի�����ʵ��API����������
+	请将 Robot.php 的地址填入你的机器人的接口地址
 
 
-    ��������
+    文件说明
 
-	���������뵽��̳����������
+	QQRobotPort.php  	接口访问的文件
+	config.php 		配置文件
+	Huifu.php		快速回复文档
+	Post.php		接受机器人post来的值，及做简单处理
+	Even.php		处理event事件
+	Api.php			功能实现文档
+	Function.php		函数文档，里面是一些全局函数
+	QQRobotApi.php		对机器人实现API控制器功能
 
 
-    ��̳��ַ
+    常见问题
+
+	遇到问题请到论坛交流区发贴
+
+
+    论坛地址
 
 	www.z-robot.com

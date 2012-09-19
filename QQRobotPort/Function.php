@@ -1,4 +1,4 @@
-﻿<?PHP
+<?PHP
 	
 	function Cur_c($url,$p_g,$msg=''){
 		$curl = curl_init();// 初始化一个 cURL 对象
@@ -54,5 +54,3 @@
         return Cur_c($apiurl);
 		}
 	}
-	
-?>

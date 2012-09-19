@@ -1,0 +1,27 @@
+
+一、 开发规则
+
+	机器人以POST方式提交 Copyright, Event, ClusterNum, ClusterName, Sender, Nick, Message, RobotQQ, SendTime, Version 参数给接口，由接口处理信息后返回结果！
+
+	接口通过Request.Form（asp，asp.net）或$_POST（PHP）接收以上参数。处理收到的信息，然后Response.Write（asp ，asp.net）或echo（PHP）输出则就会发送到QQ  当接口返回为空的时候不发送到QQ。
+
+	或者直接调用API使机器人主动发送信息！
+
+
+二、 字体设置
+
+	机器人支持在接口返回里设置字体信息，设置方法如下：
+
+	[字体=字体名]
+	[字体=字体名，字号]
+	[字体=字体名，字号，颜色]
+	[字体=字体名，字号，颜色，粗体]
+	[字体=字体名，字号，颜色，粗体，斜体]
+	[字体=字体名，字号，颜色，粗体，斜体，下底线]
+
+	支持以Font开头的字体，例如[font=字体名，字号，颜色，粗体，斜体，下底线]
+
+
+三、 API设置
+
+	详见机器人帮助目录 接口和Api帮助.txt 文档。
