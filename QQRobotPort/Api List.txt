@@ -1,0 +1,6 @@
+
+
+		Api List
+	
+	1.	小雨 Api					http://dyapi.sinaapp.com
+	2.	Lai Jingwu's API 平台		http://api.laijingwu.com
