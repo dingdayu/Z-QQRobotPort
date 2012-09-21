@@ -37,6 +37,27 @@
 		exit;
 	}
 	
+	/*URL转换*/
+	if(stristr($Message,"@url_en ")){
+		$Message = str_replace("@url_en ","",$Message);
+		echo Api_c('url_en',$Message);
+		exit;
+	}
+	
+	/*身份证信息查询*/
+	if(stristr($Message,"@id ")){
+		$Message = str_replace("@id ","",$Message);
+		echo Api_c('id',$Message);
+		exit;
+	}
+	
+	/*软件搜索*/
+	if(stristr($Message,"@software ")){
+		$Message = str_replace("@software ","",$Message);
+		echo Api_c('software',$Message);
+		exit;
+	}
+	
     /*翻译*/
 	if(stristr($Message,"@fy ")){
         $Message = str_replace("@fy ","",$Message);
