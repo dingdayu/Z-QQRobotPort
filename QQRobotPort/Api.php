@@ -44,6 +44,13 @@
 		exit;
 	}
 	
+	/*QQ在线人数*/
+	if(stristr($Message,"@online ")){
+		$Message = str_replace("@online ","",$Message);
+		echo Api_c('online');
+		exit;
+	}
+	
 	/*身份证信息查询*/
 	if(stristr($Message,"@id ")){
 		$Message = str_replace("@id ","",$Message);
