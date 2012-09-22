@@ -9,16 +9,16 @@
 // +----------------------------------------------------------------------
 // //------------------- // 接收 POST 代码区 //----------------------- // //
 
-    $Sender = $_POST["Sender"];//发送消息的QQ号码
-    $Message = $_POST["Message"];//发送的消息
-    $Nick = $_POST["Nick"];//QQ昵称
-    $Event = $_POST["Event"];//事件类型
-    $Qunid = $_POST["ClusterNum"];//群号码
-    $QunName = $_POST["ClusterName"];//群名称
-    $ApiPort = $_POST["ApiPort"];
-    $RobotQQ = $_POST["RobotQQ"];
-    $SendTime = $_POST["SendTime"];//收到消息事件的时间戳
-    $Version = $_POST["Version"];//机器人客户端版本号
-    $CCopyright = $_POST["Copyright"];//接口密匙
+    $Sender = trim($_POST["Sender"]);//发送消息的QQ号码
+    $Message = trim($_POST["Message"]);//发送的消息
+    $Nick = trim($_POST["Nick"]);//QQ昵称
+    $Event = trim($_POST["Event"]);//事件类型
+    $Qunid = trim($_POST["ClusterNum"]);//群号码
+    $QunName = trim($_POST["ClusterName"]);//群名称
+    $ApiPort = trim($_POST["ApiPort"]);
+    $RobotQQ = trim($_POST["RobotQQ"]);
+    $SendTime = trim($_POST["SendTime"]);//收到消息事件的时间戳
+    $Version = trim($_POST["Version"]);//机器人客户端版本号
+    $CCopyright = trim($_POST["Copyright"]);//接口密匙
 
-    $Message = trim(str_replace($yuan,$huan,$Message));//将小尾巴替换掉，此版本依然使用替换的方法
+    $Message = str_replace($yuan,$huan,trim($Message));//将小尾巴替换掉，此版本依然使用替换的方法
