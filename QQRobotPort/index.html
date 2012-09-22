@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>接口测试 -- by xiaoyu</title>
+<style type="text/css">
+body {
+	margin-left: 200px;
+	margin-top: 50px;
+	margin-right: 200px;
+}
+body,td,th {
+	font-family: "微软雅黑";
+	font-size: 16px;
+}
+.pos {
+	font-family: "微软雅黑";
+	text-align: center;
+}
+</style>
+</head>
+
+<body>
+<table width="606" height="436" border="1" align="center">
+  <tr>
+    <td height="38" align="center" valign="middle">接口测试</td>
+  </tr>
+  <tr>
+    <td height="362">
+    <div class="pos">
+    	<form name="form1" method="post" action="QQRobotPort.php">
+    	  <table width="446" border="0">
+    	    <tr>
+    	      <td width="184">$Sender ：</td>
+    	      <td width="246"><label for="Sender"></label>
+              <input type="text" name="Sender" id="Sender"></td>
+  	      </tr>
+    	    <tr>
+    	      <td>$Message :</td>
+    	      <td><label for="Message"></label>
+              <input type="text" name="Message" id="Message"></td>
+  	      </tr>
+    	    <tr>
+    	      <td>$Nick :</td>
+    	      <td><label for="Nick"></label>
+              <input type="text" name="Nick" id="Nick"></td>
+  	      </tr>
+    	    <tr>
+    	      <td>$Event :</td>
+    	      <td><label for="Event"></label>
+              <select name="Event" id="Event">
+    	        <option value="ReceiveAddFriends">收到加好友</option>
+    	        <option value="ReceiveClusterIM">收到群消息</option>
+    	        <option value="ReceiveNormalIM	">收到好友消息</option>
+    	        <option value="ReceiveTempSession">收到临时会话消息</option>
+    	        <option value="ReceiveVibration">收到好友震动</option>
+    	        <option value="ReceiveSignatureChanged">接受用户签名更改</option>
+    	        <option value="ReceiveFriendChangeStatus">收到好友状态改变</option>
+    	        <option value="ReceiveInputState">收到好友输入状态</option>
+    	        <option value="LoginSucceed">机器人登陆成功</option>
+    	        <option value="AddClusterSucceed">加入群成功</option>
+    	        <option value="ReceiveNewMemberAdd">新成员加群</option>
+    	        <option value="ReceiveTempClusterIM">收到讨论组信息</option>
+    	        <option value="ReceiveKickOut">被系统强制T下线</option>
+    	        <option value="RemovedFromCluster">有成员被T出群</option>
+    	        <option value="MemberCardChanged">有群成员更改群名片</option>
+    	        <option value="AddFriendSucceed">主动加好友成功</option>
+    	        <option value="AddFriendFail">主动加好友失败</option>
+    	        <option value="SleepTimeOk">休眠时间结束</option>
+  	        </select></td>
+  	      </tr>
+    	    <tr>
+    	      <td>$ClusterNum :</td>
+    	      <td><label for="ClusterNum"></label>
+   	          <input type="text" name="ClusterNum" id="ClusterNum"></td>
+  	      </tr>
+    	    <tr>
+    	      <td>$ClusterName :</td>
+    	      <td><label for="ClusterName"></label>
+   	          <input type="text" name="ClusterName" id="ClusterName"></td>
+  	      </tr>
+    	    <tr>
+    	      <td>$ApiPort :</td>
+    	      <td><label for="ApiPort"></label>
+   	          <input type="text" name="ApiPort" id="ApiPort"></td>
+  	      </tr>
+    	    <tr>
+    	      <td>$RobotQQ :</td>
+    	      <td><label for="RobotQQ"></label>
+   	          <input type="text" name="RobotQQ" id="RobotQQ"></td>
+  	      </tr>
+    	    <tr>
+    	      <td>$SendTime :</td>
+    	      <td><label for="textfield"></label>
+   	          <input type="text" name="textfield" id="textfield"></td>
+  	      </tr>
+    	    <tr>
+    	      <td>$Version :</td>
+    	      <td><label for="Version"></label>
+   	          <input type="text" name="Version" id="Version"></td>
+  	      </tr>
+    	    <tr>
+    	      <td>$Copyright :</td>
+    	      <td><label for="Copyright"></label>
+   	          <input type="text" name="Copyright" id="Copyright"></td>
+  	      </tr>
+  	    </table>
+    	  <table width="200" border="0" align="center">
+    	    <tr align="center" valign="middle">
+    	      <td><input type="submit" name="button" id="button" value="提交"></td>
+    	      <td><input type="reset" name="button2" id="button2" value="重置"></td>
+  	      </tr>
+  	    </table>
+    	</form>
+    </div>
+    </td>
+  </tr>
+  <tr>
+    <td height="26" align="center" valign="middle">Copyright © 2011-2012 Xiaoyu. All Rights Reserved</td>
+  </tr>
+</table>
+</body>
+</html>
