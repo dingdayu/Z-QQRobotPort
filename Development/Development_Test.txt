@@ -1,0 +1,91 @@
+
+Sender:		0
+Message:	
+Nick:		
+Event:		SleepTimeOk
+ClusterNum:	0
+ClusterName:	
+ApiPort:	456
+RobotQQ:	2573797666
+SendTime:	0
+Version:	Z-Robot QQRobot Service/Console 0012 Updata 1
+Copyright:	312422
+----------------------------
+
+Sender:		2573797666
+Message:	机器人信息：等级:14  活跃天数:254 剩余天数:31
+Nick:		0
+Event:		LoginSucceed
+ClusterNum:	0
+ClusterName:	
+ApiPort:	456
+RobotQQ:	2573797666
+SendTime:	0
+Version:	Z-Robot QQRobot Service/Console 0012 Updata 1
+Copyright:	312422
+----------------------------
+
+Sender:		614422099
+Message:	昵称 测试昵称
+Nick:		霡霂
+Event:		ReceiveNormalIM
+ClusterNum:	0
+ClusterName:	
+ApiPort:	456
+RobotQQ:	2573797666
+SendTime:	1348411903
+Version:	Z-Robot QQRobot Service/Console 0012 Updata 1
+Copyright:	312422
+----------------------------
+
+Sender:		614422099
+Message:	签名 测试签名
+Nick:		霡霂
+Event:		ReceiveNormalIM
+ClusterNum:	0
+ClusterName:	
+ApiPort:	456
+RobotQQ:	2573797666
+SendTime:	1348411962
+Version:	Z-Robot QQRobot Service/Console 0012 Updata 1
+Copyright:	312422
+----------------------------
+
+Sender:		614422099
+Message:	群内测试机器人
+Nick:		霡霂
+Event:		ReceiveClusterIM
+ClusterNum:	126417673
+ClusterName:	菜鸟学院╪↗□
+ApiPort:	456
+RobotQQ:	2573797666
+SendTime:	1348411973
+Version:	Z-Robot QQRobot Service/Console 0012 Updata 1
+Copyright:	312422
+----------------------------
+
+Sender:		614422099
+Message:	0
+Nick:		霡霂
+Event:		ReceiveVibration
+ClusterNum:	0
+ClusterName:	
+ApiPort:	456
+RobotQQ:	2573797666
+SendTime:	0
+Version:	Z-Robot QQRobot Service/Console 0012 Updata 1
+Copyright:	312422
+----------------------------
+
+Sender:		614422099
+Message:	表情微笑：[Face14.gif]
+Nick:		霡霂
+Event:		ReceiveNormalIM
+ClusterNum:	0
+ClusterName:	
+ApiPort:	456
+RobotQQ:	2573797666
+SendTime:	1348412019
+Version:	Z-Robot QQRobot Service/Console 0012 Updata 1
+Copyright:	312422
+----------------------------
