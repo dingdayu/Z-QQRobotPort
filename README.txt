@@ -24,8 +24,8 @@
 		┣ Development ━
 		┃	┣	━━━━
 		┃	┣ Development description.txt			开发说明
-		┃	┣ Development_Test.txt				post接受接口产生的记录文件
+		┃	┣ Development_Test.txt				POST记录产生的文件
 		┃	┣	━━━━
-		┃	┗ Development.php				POST接受文件
+		┃	┗ Development.php				POST记录文件
 		┃
 		┗ README.txt					项目读我
