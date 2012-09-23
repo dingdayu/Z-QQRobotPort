@@ -54,3 +54,16 @@
         return Cur_c($apiurl);
 		}
 	}
+	
+	function GetQunList(){
+		$date=RobotApiSend('GetFriendList');
+		$da=explode('群内部ID:',$date);
+		$st = '';
+		for($i = 1;$i < count($da); $i++){
+			$de=explode('群号:',$da[$i]);
+			$dc=explode('群名称:',$de[1]);
+
+		$st .= trim($dc[1]).' '.trim($dc[0]).'\r\n';
+		}
+		return $st;
+	}
