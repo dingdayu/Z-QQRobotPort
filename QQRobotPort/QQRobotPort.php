@@ -35,7 +35,8 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
 	*/
 	/*引入各种事件*/
 	include "Even.php";
-	include "Huifu.php";    
+	include "Huifu.php";
+	include "Face.php";    
 	include "Api.php";
 	
 	/*判断是否可以使用QQRobotApi*/
