@@ -63,7 +63,7 @@
 			exit;
 			break;
 		case '[Face14.gif]':
-			echo "您好，有什么事情嘛？发@help 获取帮助指令！[Face49.gif]\r\n";
+			echo "您好，有什么事情嘛？发 @help 获取帮助指令！[Face49.gif]\r\n";
 			exit;
 			break;
 		case '[Face15.gif]':
@@ -135,7 +135,7 @@
 			exit;
 			break;
 		case '[Face32.gif]':
-			echo " 不懂吗？我也不懂呢，不懂就发 @help 获取立青指令吧\r\n";
+			echo " 不懂吗？我也不懂呢，不懂就发 @help 获取指令吧\r\n";
 			exit;
 			break;
 		case '[Face33.gif]':

@@ -1,7 +1,9 @@
 ﻿
 	Z-QQRobot Port 项目
 	
-	欢迎各位朋友贡献代码！
+	欢迎各位朋友在此（GIT上）贡献代码！
+
+	SAE部署地址：http://ZQQRobotPort.sinaapp.com/
 	
 	文档结构说明：
 	
