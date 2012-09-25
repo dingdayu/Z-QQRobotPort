@@ -59,8 +59,8 @@
 	}
 	
 	/*软件搜索*/
-	if(stristr($Message,"@software ")){
-		$Message = str_replace("@software ","",$Message);
+	if(stristr($Message,"@rj ")){
+		$Message = str_replace("@rj ","",$Message);
 		echo Api_c('software',$Message);
 		exit;
 	}
