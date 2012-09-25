@@ -1,4 +1,4 @@
-
+﻿
 一、 开发规则
 
 	机器人以POST方式提交 Copyright, Event, ClusterNum, ClusterName, Sender, Nick, Message, RobotQQ, SendTime, Version 参数给接口，由接口处理信息后返回结果！
@@ -25,3 +25,28 @@
 三、 API设置
 
 	详见机器人帮助目录 接口和Api帮助.txt 文档。
+
+
+四、 Event事件
+
+	Event具体内容如下:
+		ReceiveAddFriends		收到加好友
+		ReceiveClusterIM		收到群消息
+		ReceiveNormalIM			收到好友消息
+		ReceiveTempSession		收到临时会话消息
+		ReceiveVibration		收到好友震动
+		ReceiveSignatureChanged		接受用户签名更改
+		ReceiveFriendChangeStatus	收到好友状态改变
+		ReceiveInputState               收到好友输入状态（表示好友第一次接触QQ）
+		LoginSucceed			机器人登陆成功
+		AddClusterSucceed               加入群成功
+		ReceiveNewMemberAdd             新成员加群
+		ReceiveTempClusterIM            收到讨论组信息
+		ReceiveKickOut                  被系统强制T下线
+		RemovedFromCluster              有成员被T出群
+		MemberCardChanged               有群成员更改群名片
+		AddFriendSucceed                主动加好友成功
+		AddFriendFail                   主动加好友失败
+		SleepTimeOk                     休眠时间结束
+		ReceiveRequestJoinCluster       有人请求加群(该事件需要VIP，且安装接口接管新人入群插件)
+
