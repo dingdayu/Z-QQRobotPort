@@ -15,9 +15,13 @@
 	$XY_Key = 'test';
 
 	/**********参数设置**********/
-	$QQRobotIp = "";												//机器人IP，如果您无法使用QQRobotApi，请留空
-	$Copyright = '';												//密钥,注意 QQRobotApi 密钥 ，默认不启动限制，请到QQRobotPort.php将注释去掉
-	$Robotqq = array('2573797666');									//允许使用接口的机器人号吗,默认不启动限制，请到QQRobotPort.php将注释去掉
+	$QQRobotIp = "";												//机器人IP
+	/*如果您留空无法使用QQRobotApi*/
+	$Copyright = '';												//密钥
+	/*注意 QQRobotApi 密钥 ，如果出错则不能使用机器人API，默认不启动机器人限制，启用请到QQRobotPort.php将注释去掉*/
+	
+	$Robotqq = array('2573797666');									//允许使用接口的机器人号吗
+	/*默认不启动限制，启用请到QQRobotPort.php将注释去掉，可 array("614422099","2573797666"); 多个机器人号码*/
 	$Adminqq = array("614422099","2573797666");						//管理员QQ，可设置多个
 	
 	
