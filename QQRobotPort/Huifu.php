@@ -19,11 +19,7 @@
         echo $kuaidi_ab;
         exit;
     }
-	
-	if(in_array($Message,$Get_GetFriendList)){  		//获取所有好友命令
-         echo RobotApiSend('GetFriendList');
-         exit;
-    }
+
 
 	if($Message=="接口"){
 		echo "本接口作者为：小雨(QQ:614422099)。\r\n接口版本： V1.0 免费版。\r\n官方网站：http://api.dingxiaoyu.com";
