@@ -44,6 +44,9 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
 		include "QQRobotApi.php";
 	}
 
+	if($i_kg == 1){
+		include "i.php";
+	}
 }else{
 	echo "接口错误！不可用使用浏览器浏览，如需使用请与管理员联系！" ;
 	exit;
