@@ -55,6 +55,16 @@
 		exit;
 	}
 	
+		if(in_array($Message,$Get_GetQunList)){				//获取所有群命令
+        echo GetQunList();
+        exit;
+		}
+	
+		if(in_array($Message,$Get_GetFriendList)){  		//获取所有好友命令
+         echo GetFriendList();
+         exit;
+		}
+	
 	if($Event == 'ReceiveKickOut'){					
 		$str = file_get_contents("http://".$QQRobotIp.":".$ApiPort."/Api?Key=".$Copyright."&SendType=ReStartRobot");
     }
