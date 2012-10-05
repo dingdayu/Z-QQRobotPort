@@ -1,6 +1,6 @@
 <?PHP
 	
-	function Cur_c($url,$p_g,$msg=''){
+	function Cur_c($url,$p_g='GET',$msg=''){
 		$curl = curl_init();// 初始化一个 cURL 对象
 		if($p_g=='POST'){
 			curl_setopt($ch,　CURLOPT_POST,　1);//开启POST
@@ -31,39 +31,43 @@
 	function RobotApiSend($event, $sender = '', $message = ''){
 		global $QQRobotIp,$Copyright,$ApiPort;
 		if($QQRobotIp != null and $Copyright != null){
-			$apiurl = "http://".$QQRobotIp.":".$ApiPort."/Api?Key=".$Copyright."&utf=1";
+			$url = "http://".$QQRobotIp.":".$ApiPort."/Api";//?&utf=1";
 			if($event == 'ResetRobot'){//重启机器人
-				$apiurl .= "&SendType=ResetRobot";
+				$msg = "Key=".$Copyright."&SendType=ResetRobot&utf=1";
 			}elseif($event == 'LoginRobot'){//登陆机器人
-				$apiurl .= "&SendType=LoginRobot";
+				$msg = "Key=".$Copyright."&SendType=LoginRobot&utf=1";
 			}elseif($event == 'ExitRobot'){//退出机器人              
-				$apiurl .= "&SendType=ExitRobot";
+				$msg .= "Key=".$Copyright."&SendType=ExitRobot&utf=1";
 			}elseif($event == 'LoginStatus'){//返回当前登录状态
-				$apiurl .= "&SendType=LoginStatus";
+				$msg .= "Key=".$Copyright."&SendType=LoginStatus&utf=1";
 			}elseif($event == 'Friend'){//开启关闭好友回复
-				$apiurl .= "&SendType=Friend&ID={$message}";
+				$msg .= "Key=".$Copyright."&SendType=Friend&ID={$message}&utf=1";
 			}elseif($event == 'Cluster'){//开启关闭群回复
-				$apiurl .= "&SendType=Friend&ID={$message}";
+				$msg .= "Key=".$Copyright."&SendType=Friend&ID={$message}&utf=1";
 			}elseif($event == 'GetFriendList'){//获取好友列表
-				$apiurl .= "&SendType=GetFriendList";
+				$msg .= "Key=".$Copyright."&SendType=GetFriendList&utf=1";
+			}elseif($event == 'GetQunList'){//获取群列表
+				$msg .= "Key=".$Copyright."&SendType=GetQunList&utf=1";
 			}elseif($event == 'AddCluster'){//主动加好友
-				$apiurl .= "&SendType=AddCluster&ID=".$sender.'&Message='.$message;
+				$msg .= "Key=".$Copyright."&utf=1&SendType=AddCluster&ID=".$sender.'&Message='.$message;
 			}elseif($event == 'AddFriend'){//主动加群
-				$apiurl .= "&SendType=AddFriend=".$sender.'&Message='.$message;
+				$msg .= "Key=".$Copyright."&utf=1&SendType=AddFriend=".$sender.'&Message='.$message;
+			}elseif($event == 'AddFriend'){//主动加群
+				$msg .= "Key=".$Copyright."&utf=1&SendType=AddFriend=".$sender.'&Message='.$message;
 			}
-        return Cur_c($apiurl);
+        return Cur_c($url,'GET',$msg);
 		}
 	}
 	
 	function GetQunList(){
-		$date=RobotApiSend('GetFriendList');
+		$date=RobotApiSend('GetQunList');
 		$da=explode('群内部ID:',$date);
 		$st = '';
 		for($i = 1;$i < count($da); $i++){
 			$de=explode('群号:',$da[$i]);
 			$dc=explode('群名称:',$de[1]);
 
-		$st .= trim($dc[1]).' '.trim($dc[0]).'\r\n';
+		$st .= trim($dc[1]).' '.trim($dc[0])."\r\n";
 		}
 		return $st;
 	}
