@@ -67,16 +67,40 @@
 	
     /*翻译*/
 	if(stristr($Message,"@fy ")){
-        $Message = str_replace("@fy ","",$Message);
-		$entoch = @file_get_contents('http://api.laijingwu.com/?type=microsofttraslate&msg='.urlencode($Message));
-		$entoch = str_replace( '>','>'.chr(13),$entoch);
-		$entoch = strip_tags($entoch);
-		echo $entoch;
+		$Message = str_replace("@fy ","",$Message);
+		echo Api_c('fanyi',$Message);
 		exit;
 	}
 
+	/*拼音*/
+	if(stristr($Message,"@py ")){
+		$Message = str_replace("@py ","",$Message);
+		echo Api_c('pinyi',$Message);
+		exit;
+	}
+	
+	/*ip查询*/
+	if(stristr($Message,"@ip ")){
+		$Message = str_replace("@ip ","",$Message);
+		echo Api_c('ip',$Message);
+		exit;
+	}
+	
 	/*查询即时时间*/
 	if(in_array($Message,$time)){
 		echo Api_c('time');
 		exit;
-	}  
+	}
+
+	/*ip查询*/
+	if(stristr($Message,"@weather ")){
+		$Message = str_replace("@weather ","",$Message);
+		echo Api_c('weather',$Message);
+		exit;
+	}
+
+	/*仙国大帝*/
+	if($Message=='仙国大帝'){
+		echo Api_c('xianguo');
+		exit;
+	} 
