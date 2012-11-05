@@ -119,7 +119,7 @@
 			exit;
 			break;
 		case '[Face28.gif]':
-			echo " 傻笑什么呢，笑的那么开心，说出来和立青一起分享分享嘛。 [Face49.gif]\r\n";
+			echo " 傻笑什么呢，笑的那么开心，说出来和我一起分享分享嘛。 [Face49.gif]\r\n";
 			exit;
 			break;
 		case '[Face29.gif]':

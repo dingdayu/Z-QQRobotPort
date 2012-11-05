@@ -23,12 +23,13 @@
 		exit;
         }
 
-	/*QQ在线状态*/
+	/*QQ在线状态
 	if(stristr($Message,"@qq ")){
 		$Message = str_replace("@qq ","",$Message);
-		echo Api_c('qq_log',$Message);
+		echo Api_c('online',$Message);
 		exit;
 	}
+	*/
 	
 	/*手机归属地*/
 	if(stristr($Message,"@pn ")){
@@ -38,25 +39,33 @@
 	}
 	
 	/*URL转换*/
-	if(stristr($Message,"@url_en ")){
-		$Message = str_replace("@url_en ","",$Message);
-		echo Api_c('url_en',$Message);
+	if(stristr($Message,"@urlen ")){
+		$Message = str_replace("@urlen ","",$Message);
+		echo Api_c('urlen',$Message);
+		exit;
+	}
+	
+	/*拼音转换*/
+	if(stristr($Message,"@py ")){
+		$Message = str_replace("@py ","",$Message);
+		echo Api_c('pinyi',$Message);
 		exit;
 	}
 	
 	/*QQ在线人数*/
-	if(stristr($Message,"@online ")){
+	if(stristr($Message,"@qq ")){
 		$Message = str_replace("@online ","",$Message);
 		echo Api_c('online');
 		exit;
 	}
 	
-	/*身份证信息查询*/
+	/*身份证信息查询
 	if(stristr($Message,"@id ")){
 		$Message = str_replace("@id ","",$Message);
 		echo Api_c('id',$Message);
 		exit;
 	}
+	*/
 	
 	/*软件搜索*/
 	if(stristr($Message,"@rj ")){
@@ -69,13 +78,6 @@
 	if(stristr($Message,"@fy ")){
 		$Message = str_replace("@fy ","",$Message);
 		echo Api_c('fanyi',$Message);
-		exit;
-	}
-
-	/*拼音*/
-	if(stristr($Message,"@py ")){
-		$Message = str_replace("@py ","",$Message);
-		echo Api_c('pinyi',$Message);
 		exit;
 	}
 	

@@ -1,5 +1,7 @@
 <?php
 
+	exit("SAE下无法使用此文档！");
+	
     $Sender = trim(isset($_POST["Sender"])?$_POST["Sender"]:'');//发送消息的QQ号码
     $Message = trim(isset($_POST["Message"])?$_POST["Message"]:'');//发送的消息
     $Nick = trim(isset($_POST["Nick"])?$_POST["Nick"]:'');//QQ昵称

@@ -60,10 +60,10 @@
 			}
 			break;
 		case 'MemberCardChanged':				//有成员更改群名片
-		if(!empty($MemberCardChanged)){
-			echo str_replace("{Nick}",$Nick,$MemberCardChanged);
-			exit;   
-		}
+			if(!empty($MemberCardChanged)){
+				echo str_replace("{Nick}",$Nick,$MemberCardChanged);
+				exit;   
+			}
 			break;
 	}
 

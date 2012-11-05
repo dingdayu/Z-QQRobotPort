@@ -12,8 +12,8 @@
 @date_default_timezone_set('PRC');
 
 if($_SERVER['REQUEST_METHOD'] == "POST"){
-	include "Config.php";
 	include "Function.php";
+	include "Config.php";
 	include "Post.php";
    
 	/*

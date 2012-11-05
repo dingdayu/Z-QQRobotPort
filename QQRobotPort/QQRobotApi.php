@@ -44,6 +44,24 @@
 			echo RobotApiSend('Cluster','','0');
 			exit;
 		}
+		
+		if(in_array($Message,$Get_GetQunList)){				//获取所有群命令
+        		echo GetQunList();
+        		exit;
+		}
+	
+		if(in_array($Message,$Get_GetFriendList)){  		//获取所有好友命令
+			echo RobotApiSend('GetFriendList');
+			exit;
+		}
+        
+		/*		
+        if(stristr($Message,"add ")){  		//获取所有好友命令
+            $Message = str_replace("add ","",$Message);
+			echo RobotApiSend('AddFriend',$Message);
+			exit;
+		}
+		*/
 	
 	}
 	
@@ -53,16 +71,6 @@
 	if(in_array($Message,$Api_LoginStatus)){ 	//返回当前登录状态
 		echo RobotApiSend('LoginStatu');
 		exit;
-	}
-	
-	if(in_array($Message,$Get_GetQunList)){				//获取所有群命令
-        echo GetQunList();
-        exit;
-	}
-	
-	if(in_array($Message,$Get_GetFriendList)){  		//获取所有好友命令
-        echo RobotApiSend('GetFriendList');
-        exit;
 	}
 	
 	if($Event == 'ReceiveKickOut'){					
