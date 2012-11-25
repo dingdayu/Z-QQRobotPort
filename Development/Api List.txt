@@ -2,5 +2,5 @@
 
 		Api List
 	
-	1.	小雨 Api			http://dyapi.sinaapp.com
-	2.	Lai Jingwu's API 平台		http://api.laijingwu.com
+	1.	小雨 Api			http://api.dingxiaoyu.com
+	2.	实用信息查询接口		http://api.liqwei.com/

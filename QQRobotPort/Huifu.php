@@ -25,6 +25,11 @@
 		exit;
     }
 	
+	if($Message=="logo"){
+		echo "[img]http://im.z-robot.com/static/image/common/logo.png[/img]";
+		exit;
+    }
+	
 	if($Message=="内置命令"){
 		echo "------------内置命令-------------\r\nTo          给好友发送消息\r\nToQ         给群发消息\r\n签名        更改签名\r\n昵称        更改昵称\r\n退群        退出群\r\n加群        加入群\r\n弹窗        给好友发送弹窗\r\n加好友      主动添加好友\r\n更新机器人信息 \r\n--------------------------\r\n以上为内置命令，你还可发生‘特殊命令’获取特殊命令！";
 		exit;
